@@ -1,10 +1,11 @@
 'use strict';
 
 function makeArray(firstArray, secondArray, maxLength) {
-  const twoArray = firstArray.concat(secondArray);
-  // console.log(twoArray);
-  if (twoArray.length >= maxLength) {
-    return twoArray.slice(0, maxLength);
+  const combinedArray = firstArray.concat(secondArray);
+  if (combinedArray.length >= maxLength) {
+    return combinedArray.slice(0, maxLength);
+  } else {
+    return combinedArray;
   }
 }
 
